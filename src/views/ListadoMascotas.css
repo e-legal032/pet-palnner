@@ -1,0 +1,51 @@
+/* src/views/ListadoMascotas.css */
+
+.listado-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.mascotas-lista {
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+}
+
+.mascota-item {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px; /* Espaciado vertical entre botones */
+}
+
+
+.mascota-foto {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.mensaje-cargando {
+  font-style: italic;
+  color: #666;
+  margin: 20px 0;
+
+}
+.mascotas-lista .boton-borrar {
+  margin-top: 8px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background-color: var(--color-rojo);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.mascotas-lista .boton-borrar:hover {
+  background-color: var(--color-rojo-hover);
+}
+
+

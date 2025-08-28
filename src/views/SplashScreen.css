@@ -1,0 +1,102 @@
+/*src/views/SplachScreen.css*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.splash-container {
+  background-color: #33cccc;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* 🌀 Animación de entrada del logo */
+.splash-logo {
+  width: 160px;
+  margin-bottom: 20px;
+  animation: logoEntrada 1.2s ease-out forwards;
+  transform-origin: center;
+  opacity: 0;
+  filter: drop-shadow(0 0 12px #ffffff); /* ← resplandor blanco */
+}
+
+@keyframes logoEntrada {
+  0% {
+    transform: scale(0.3) rotateY(0deg) skewX(25deg) translateY(40px);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.2) rotateY(180deg) skewX(0deg) translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1.05) rotateY(300deg);
+  }
+  100% {
+    transform: scale(1) rotateY(360deg);
+    opacity: 1;
+  }
+}
+
+
+/* ✨ Subtítulo con aparición secuencial */
+.splash-subtitle {
+  font-family: 'Inter', sans-serif;
+  color: #ffffff; /* Blanco puro */
+  
+  font-weight: 600;       
+  margin-top: 10px;
+  max-width: 80%;
+}
+
+.linea {
+  color: #ffffff; /* Blanco puro */
+  font-size: 1.6rem;       /* ← más grande */
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+.naranja-animada {
+  color: #FBB040;
+  font-weight: 600;
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: naranjaDestaca 1s ease-out forwards;
+  animation-delay: 2.2s; 
+}
+
+@keyframes naranjaDestaca {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+.linea.uno {
+  animation-delay: 1.4s;
+}
+
+.linea.dos {
+  animation-delay: 2.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

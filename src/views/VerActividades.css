@@ -1,0 +1,77 @@
+/* src/views/VerActividades.css */
+
+section {
+  padding: 2rem;
+  max-width: 640px;
+  margin: auto;
+  font-family: system-ui, sans-serif;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+strong {
+  font-weight: 600;
+  color: #222;
+}
+
+button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #e60000;
+}
+.notas {
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+}
+.boton-volver{
+  background-color: #ccc;
+  ;
+}
+.boton-volver:hover{
+  background-color: #5a5959;
+  ;
+}

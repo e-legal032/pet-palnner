@@ -1,0 +1,112 @@
+/* src/styles/FormularioActividad.css */
+
+.formulario-container {
+  text-align: center;
+  padding: 40px;
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.formulario-container h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.formulario-container label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #444;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.formulario-container input,
+.formulario-container textarea {
+  width: 80%;
+  max-width: 320px;
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s ease;
+}
+
+.formulario-container input:focus,
+.formulario-container textarea:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+.formulario-container p {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: #555;
+}
+
+.botonera {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+  align-items: center;
+}
+
+.boton-primario {
+  padding: 10px 24px;
+  font-size: 1rem;
+  background-color: #33cccc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.boton-primario:hover {
+  background-color: #10b4b4;
+}
+
+.boton-primario:active {
+  background-color: #46e9e9;
+}
+
+.boton-primario:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.boton-secundario {
+  padding: 10px 24px;
+  font-size: 1rem;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.boton-secundario:hover {
+  background-color: #d5d5d5;
+}
+
+.boton-secundario:active {
+  background-color: #c2c2c2;
+}
+.boton-danger{
+  background-color: red;
+}
+
+.wap-icon{
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+

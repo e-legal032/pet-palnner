@@ -1,0 +1,129 @@
+/*src/index.css*/
+/* 🎯 Reset global para márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* 🎨 Colores funcionales por tipo de actividad */
+  --color-azul: #1976d2;
+  --color-azul-hover: #1565c0;
+
+  --color-verde: #4caf50;
+  --color-verde-hover: #45a049;
+
+  --color-naranja: #f57c00;
+  --color-naranja-hover: #fcba04;
+  --color-naranja-activo: #e65100;
+
+  --color-naranja-light: #fcba04;
+  --color-naranja-light-hover: #f57c00;
+  --color-naranja-light-activo: #f1a90c;
+
+  --color-verde-light: #6fdd72;
+  --color-verde-light-hover: #4caf50;
+  --color-verde-light-activo:#2a812c;
+
+  --color-rojo: #d32f2f;
+  --color-rojo-hover: #b71c1c;
+  --color-rojo-claro: #ff4d4d;
+  --color-rojo-hover-claro: #e60000;
+
+  --color-alerta: #ffc107;
+  --color-alerta-fondo: #fff8e1;
+  --color-alerta-sombra: rgba(255, 193, 7, 0.4);
+
+  /* 🧼 Neutros y fondos */
+  --color-fondo: #f9f9f9;
+  --color-fondo-claro: #f5f5f5;
+  --color-fondo-cálido: #fdf6f0;
+  --color-fondo-violeta: #f8f4fb;
+  --color-fondo-splash: #33cccc;
+
+  --color-borde: #ccc;
+  --color-borde-claro: #ddd;
+
+  /* 🅰️ Tipografía */
+  --color-texto: #333;
+  --color-texto-secundario: #555;
+  --color-texto-terciario: #666;
+  --color-texto-claro: #888;
+  --color-texto-contraste: #ffffff;
+
+  --fuente-base: 'Inter', sans-serif;
+  --tamaño-base: 1rem;
+  --tamaño-pequeño: 0.9rem;
+  --tamaño-título: 1.6rem;
+  --tamaño-título-grande: 1.8rem;
+
+  /* 📐 Espaciado y estructura */
+  --espaciado-base: 1rem;
+  --espaciado-vista: 24px;
+  --espaciado-lista: 1.5rem;
+  --margen-base: 1rem;
+  --margen-vista: 2rem;
+
+  --radio-base: 6px;
+  --radio-card: 8px;
+  --radio-contenedor: 12px;
+
+  /* ✨ Sombra */
+  --sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.contenedor-welcome{
+  padding-top: 5px;
+}
+
+/* 📱 Mobile first: ya está implícito en los estilos base */
+
+/* 🖥️ Breakpoint para tablets y desktop */
+@media (min-width: 600px) {
+  :root {
+    --tamaño-título: 1.8rem;
+    --tamaño-base: 1.1rem;
+    --espaciado-vista: 32px;
+    --espaciado-lista: 2rem;
+  }
+
+  .contenedor {
+    max-width: 640px;
+    padding: var(--espaciado-vista);
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .boton {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .mascota-foto {
+    width: 140px;
+    height: 140px;
+  }
+
+  .titulo {
+    font-size: var(--tamaño-título-grande);
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-opciones {
+    width: 180px;
+    font-size: 0.9rem;
+    right: 8px;
+    top: 36px;
+  }
+
+  .opcion {
+    padding: 6px 10px;
+  }
+
+  .hamburguesa {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,26 @@
+/*src/components/MascotaCard.css*/
+.mascota-card {
+  display: inline-block;
+  margin: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.mascota-card:hover {
+  transform: scale(1.05);
+}
+
+.mascota-imagen {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.mascota-nombre {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #333;
+}

@@ -1,0 +1,60 @@
+/* src/views/Alertas.css */
+.alertas-container {
+  padding: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.alertas-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.alerta-item {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+/* 🔔 Alertas activas (pendientes) */
+.alerta-item.activa {
+  background-color: #fff8e1;
+  border-left: 4px solid #ffc107;
+  box-shadow: 0 0 4px rgba(255, 193, 7, 0.4);
+  font-weight: 500;
+}
+
+/* ✅ Alertas ya mostradas */
+.alerta-item.mostrada {
+  opacity: 0.6;
+  background-color: #f0f0f0;
+  border-left: 4px solid #ccc;
+}
+
+.alerta-fecha {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.alerta-botones {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.alerta-botones button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  transition: background-color 0.2s ease;
+}
+
+.alerta-botones button:hover {
+  background-color: #d6d6d6;
+}

@@ -1,0 +1,53 @@
+/* src/components/MainLayout */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.layout-header {
+  background-color: #f3c23b;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.layout-main {
+  flex: 1;
+  padding: 2rem;
+}
+.layout-header .splash-logo {
+  height: 70px;
+  width: 70px;
+  margin: 10px 0 10px;
+  
+}
+
+.layout-footer {
+  background-color: #f3c23b;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+.layout-footer p {
+  margin: 0;
+  color: #272727;
+  font-size: 0.8rem;
+}
+.footer-link {
+  color: #272727;
+  font-size: 0.9rem; 
+  font-weight: 600;
+  text-decoration: none;
+  
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #3860e6;
+
+}
+

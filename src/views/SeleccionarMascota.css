@@ -1,0 +1,51 @@
+/* src/views/SeleccionarMascota.css*/
+.seleccionar-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.mascota-lista {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.mascota-item {
+  margin-bottom: 1rem;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.mascota-item button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #33cccc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.mascota-item button:hover {
+  background-color: #19bdbd;
+}
+.seleccionar-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  margin-top: 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.seleccionar-button:hover {
+  background-color: #45a049;
+}

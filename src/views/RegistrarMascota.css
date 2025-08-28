@@ -1,0 +1,50 @@
+/* src/views/RegistrarMascota.css */
+
+.formulario-mascota {
+  text-align: center;
+  padding: 40px;
+}
+
+.input-texto {
+  padding: 8px;
+  width: 60%;
+  max-width: 300px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.input-file {
+  margin-top: 10px;
+}
+
+.boton-guardar {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.boton-guardar:hover {
+  background-color: #45a049;
+}
+.input-file-oculto {
+  display: none;
+}
+.boton-subir {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--color-naranja);
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-subir:hover {
+  background-color: var(--color-naranja-hover);
+}

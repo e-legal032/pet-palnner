@@ -1,0 +1,43 @@
+.navbar-hamburguesa {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.hamburguesa {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.hamburguesa:hover{
+  background-color: #33cccc;
+}
+
+.menu-opciones {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  border: 1px solid #fcfcf9;
+  border-radius: 4px;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  z-index: 1000;
+}
+
+.opcion {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: #33cccc
+}
+.opcion:hover {
+  background-color: #e0f7f7;
+  color: #009999;
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.despedida-container {
+  height: 100vh;
+  background: linear-gradient(180deg, #33cccc 0%, #aaf0f0 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.despedida-logo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  animation: rotarVertical 6s linear infinite;
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.25),
+    0 0 20px rgba(255, 255, 255, 0.25);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+@keyframes rotarVertical {
+  from { transform: rotateY(0deg); }
+  to   { transform: rotateY(360deg); }
+}
+
+
+
+.mensaje-curatorial {
+  max-width: 600px;
+}
+
+.linea {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.linea.uno {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.linea.dos,
+.linea.tres {
+  font-size: 1.4rem;
+}
+
+.linea.uno { animation-delay: 0.8s; }
+.linea.dos { animation-delay: 1.4s; }
+.linea.tres { animation-delay: 2s; }
+
+.mensaje-curatorial strong {
+  color: #FBB040;
+  font-weight: 600;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLogo {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,128 @@
+/* src/App.css */
+
+.ruta-no-encontrada {
+  text-align: center;
+  padding: var(--espaciado-vista);
+  font-size: var(--tamaño-título);
+  color: var(--color-texto-secundario);
+  font-style: italic;
+}
+
+/* 🟢 Botones curatoriales */
+.boton {
+  padding: 10px 20px;
+  font-size: var(--tamaño-base);
+  border: none;
+  border-radius: var(--radio-base);
+  color: var(--color-texto-contraste);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.boton-verde {
+  background-color: var(--color-verde);
+}
+.boton-verde:hover {
+  background-color: var(--color-verde-hover);
+}
+
+.boton-naranja {
+  background-color: var(--color-naranja);
+}
+.boton-naranja:hover {
+  background-color: var(--color-naranja-hover);
+}
+
+.boton-naranja-light {
+  background-color: var(--color-naranja-light);
+}
+.boton-naranja-light:hover {
+  background-color: var(--color-naranja-light-hover);
+}
+
+.boton-verde-light {
+  background-color: var(--color-verde-light);
+}
+.boton-verde-light:hover {
+  background-color: var(--color-verde-light-hover);
+}
+
+.boton-rojo {
+  background-color: var(--color-rojo);
+}
+.boton-rojo:hover {
+  background-color: var(--color-rojo-hover);
+}
+.botones-welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Espaciado vertical entre botones */
+  margin-bottom: 24px; /* Separación con el render dinámico */
+}
+
+
+/* 📦 Contenedores y tarjetas */
+.contenedor {
+  padding: var(--espaciado-vista);
+  max-width: 480px;
+  margin: 0 auto;
+  border-radius: var(--radio-contenedor);
+  box-shadow: var(--sombra-suave);
+  background-color: var(--color-fondo);
+  text-align: center;
+}
+
+.card {
+  background-color: var(--color-fondo-claro);
+  padding: var(--espaciado-base);
+  border-radius: var(--radio-card);
+  border: 1px solid var(--color-borde);
+  margin-bottom: var(--margen-base);
+}
+
+/* 🧾 Inputs */
+.input {
+  width: 80%;
+  max-width: 320px;
+  margin-top: 8px;
+  padding: 10px;
+  font-size: var(--tamaño-base);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-base);
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-verde); /* Se puede variar por contexto */
+}
+
+/* 🅰️ Tipografía y mensajes */
+.titulo {
+  font-size: var(--tamaño-título);
+  margin-bottom: 20px;
+  color: var(--color-texto);
+  font-weight: 600;
+}
+
+.mensaje {
+  font-size: var(--tamaño-base);
+  color: var(--color-texto-secundario);
+  margin: 8px 0;
+}
+
+.mensaje-vacio {
+  font-size: 1.1rem;
+  color: var(--color-texto-claro);
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+/* Complementos de vistas y componentes dada la eliminación de los respectivos .css*/
+.mascotas-lista {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
